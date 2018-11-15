@@ -1,0 +1,17 @@
+manifest = "bb1fd9529fa7d304eb99b5f5410dc353271facb594ce3b6c81286e0dcc161d23"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/icu4c"
+target = "//:icu4c"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/luadist-freetype"
+target = "//:freetype"
+
+[[lock]]
+name = "github.com/buckaroo-pm/icu4c"
+revision = "32734978d92f0434926bf41de3c20128bc765f5f"
+
+[[lock]]
+name = "github.com/buckaroo-pm/luadist-freetype"
+revision = "fdec3a0229063b6bcdf4c7574e5fd41e2f22fcff"

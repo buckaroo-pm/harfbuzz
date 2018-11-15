@@ -1,0 +1,9 @@
+targets = [ "//:harfbuzz" ]
+
+[[dependencies]]
+package = "github.com/buckaroo-pm/icu4c"
+version = "branch=master"
+
+[[dependencies]]
+package = "github.com/buckaroo-pm/luadist-freetype"
+version = "branch=master"
