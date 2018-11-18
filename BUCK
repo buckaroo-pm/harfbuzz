@@ -1,3 +1,5 @@
+include_defs('//BUCKAROO_DEPS')
+
 have_graphite = read_config('harfbuzz', 'have_graphite', False)
 
 graphite_srcs = glob([
@@ -50,10 +52,8 @@ cxx_library(
     ('macos.*', macos_srcs), 
     ('windows.*', windows_srcs), 
   ], 
-  deps = [
-    'buckaroo.github.buckaroo-pm.icu4c//:icu4c', 
-    'buckaroo.github.buckaroo-pm.luadist-freetype//:freetype', 
-  ], 
+  reexport_all_header_dependencies = False, 
+  deps = BUCKAROO_DEPS, 
   visibility = [
     'PUBLIC', 
   ], 
