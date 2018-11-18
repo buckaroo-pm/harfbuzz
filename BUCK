@@ -29,6 +29,7 @@ macos_preprocessor_flags = [
 
 cxx_library(
   name = 'harfbuzz', 
+  header_namespace = '', 
   exported_headers = subdir_glob([
     ('src', 'hb*.h'), 
   ], prefix = 'harfbuzz'), 
