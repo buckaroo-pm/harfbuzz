@@ -8,10 +8,10 @@ target = "//:freetype"
 package = "github.com/buckaroo-pm/icu4c"
 target = "//:icu4c"
 
-[[lock]]
-name = "github.com/buckaroo-pm/freetype2"
+[lock."github.com/buckaroo-pm/freetype2"]
+versions = [ "branch=master" ]
 revision = "3f7996f55a627ae14af58d6f63f4830c67936869"
 
-[[lock]]
-name = "github.com/buckaroo-pm/icu4c"
-revision = "bc4345696f5403768689468a51e173026491cf11"
+[lock."github.com/buckaroo-pm/icu4c"]
+versions = [ "branch=master" ]
+revision = "d6803681f02ef9395665d4db6e84a4416a679bc3"
